@@ -1,23 +1,14 @@
-# n = int(input("Введите количество вводимых чисел:  "))
-
-# list = [] 
-
-# for i in range(1, n + 1):
-#     x = (1+1/n)**n
-#     print(list[x])
-# # Далее по условию задачи необходимо посчитать их сумму
-# print(round(sum(list), 2))
-
-a = input('Введите вещественное число: ')
-a = list(a)
-
-answer = 0
-for i in a:
-    if '.' in a:
-        a.remove('.')
-    elif i == 0:
-        a.remove(i)
-for i in a:
-    answer = answer + int(i)
-
-print(f'Cумма цифр в числе: {answer}')
+k = int(input('Введите число: '))
+def get_fibonacci(k):
+    fibo_nums = []
+    a, b = 1, 1
+    for i in range(k-1):
+        fibo_nums.append(a)
+        a, b = b, a + b
+    a, b = 0, 1
+    for i in range (k):
+        fibo_nums.insert(0, a)
+        a, b = b, a - b
+    return fibo_nums
+fibo_nums = get_fibonacci(k)
+print(get_fibonacci(k))
