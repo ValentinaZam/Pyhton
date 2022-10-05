@@ -4,4 +4,7 @@
 # 3*x² +10*x + 6 
 # Вывод: 5*x² + 14*x + 11
 
+f = open('polynomial1.txt', 'r')
+f.read(0)
+print(*f)
 

@@ -12,7 +12,7 @@ print(lst)
 x = ""
 for i in range(k + 1):
     if i < k:
-        x += str(lst[i]) + "*x" + str(k-i)  +  " + " 
+        x += str(lst[i]) + "*x^" + str(k-i)  +  " + " 
     else:
         x += str(lst[i])
 print(x)
