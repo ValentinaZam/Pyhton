@@ -4,7 +4,7 @@
 # - k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
 
 import random
-my_f = open("result.txt", "a+")
+my_f = open("result.txt", "w")
 #with open("result.txt", "w+", encoding='utf-8') as my_f:
 k = int(input("Введите число:   "))
 lst = [random.randint(0,100) for i in range(k + 1)]
