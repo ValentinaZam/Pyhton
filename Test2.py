@@ -1,8 +1,8 @@
-n = int(input('Введите число: '))
-b = ''
+import xdrlib
 
-while n > 0:
-    b = str(n % 2) + b
-    n //= 2
 
-print(b)
+x = ['Ivan','Valek','Vera', 'Nika'].split()
+print(x)
+a = ('123', '345', '365')
+n = list(enumerate(zip(x, a)))
+print(n)
